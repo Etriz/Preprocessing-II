@@ -1,1 +1,23 @@
-// Navigation Styles here
+nav {
+  border-bottom: 2px dashed @silver;
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    h1 {
+      font-family: "Indie Flower", cursive;
+      margin: 0 auto;
+      margin-left: 0;
+    }
+    a {
+      // border: 1px solid red;
+      color: black;
+      text-decoration: none;
+      font-size: 1.6rem;
+      padding: 2.5rem 1.5rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
