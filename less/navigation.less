@@ -4,10 +4,19 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
+    @media @mobile {
+      justify-content: space-evenly;
+    }
     h1 {
       font-family: "Indie Flower", cursive;
       margin: 0 auto;
       margin-left: 0;
+      @media @mobile {
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+      }
     }
     a {
       // border: 1px solid red;
@@ -15,9 +24,12 @@ nav {
       text-decoration: none;
       font-size: 1.6rem;
       padding: 2.5rem 1.5rem;
+      @media @mobile {
+        padding: 1rem 1.5rem;
+      }
       &:hover {
         text-decoration: underline;
-      }
-    }
-  }
+      } //hover
+    } //a
+  } //container
 }
