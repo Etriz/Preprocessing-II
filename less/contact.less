@@ -1,0 +1,67 @@
+.form-area {
+  padding: 1rem 0;
+}
+form {
+  .flex();
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .packages {
+    .flex();
+    justify-content: space-around;
+    width: 95%;
+    border: 1px solid #a9a9a9;
+    padding: 2rem 2rem 0;
+    margin: 2rem 0;
+    label {
+      width: 33%;
+    }
+
+    .radio {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+
+      border: 2px solid @button-bg;
+      //   transition: 0.2s all linear;
+      &:checked {
+        background: @button-bg;
+        color: @button-bg;
+      }
+    }
+  } //packages
+  input {
+    width: 30%;
+    margin-bottom: 2rem;
+    line-height: 2;
+  }
+  label {
+    width: 30%;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  textarea {
+    width: 95%;
+    height: 20rem;
+    margin-bottom: 1rem;
+  }
+  .btn-contact {
+    .btnmix(@button-bg, @white, 1rem);
+    text-align: center;
+    width: 50%;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+    cursor: pointer;
+    &:hover {
+      .darkhover(@button-bg);
+    }
+    @media @mobile, @tablet {
+      width: 95%;
+    }
+  }
+}
