@@ -195,6 +195,7 @@ nav .container h1 {
   }
 }
 nav .container a {
+  position: relative;
   color: black;
   text-decoration: none;
   font-size: 1.6rem;
@@ -205,8 +206,20 @@ nav .container a {
     padding: 1rem 1.5rem;
   }
 }
-nav .container a:hover {
-  text-decoration: underline;
+nav .container a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 25%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: 50% 50%;
+  width: 75%;
+  height: 3px;
+  background-color: black;
+  transition: transform 250ms;
+}
+nav .container a:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 .footer {
   width: 100%;
@@ -351,5 +364,75 @@ nav .container a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+.form-area {
+  padding: 1rem 0;
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+form .packages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  width: 95%;
+  border: 1px solid #a9a9a9;
+  padding: 2rem 2rem 0;
+  margin: 2rem 0;
+}
+form .packages label {
+  width: 33%;
+}
+form .packages .radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #17a2b8;
+}
+form .packages .radio:checked {
+  background: #17a2b8;
+  color: #17a2b8;
+}
+form input {
+  width: 30%;
+  margin-bottom: 2rem;
+  line-height: 2;
+}
+form label {
+  width: 30%;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+form textarea {
+  width: 95%;
+  height: 20rem;
+  margin-bottom: 1rem;
+}
+form .btn-contact {
+  background: #17a2b8;
+  color: #ffffff;
+  border-radius: 1rem;
+  text-align: center;
+  width: 50%;
+  font-size: 1.6rem;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+form .btn-contact:hover {
+  background: #117a8b;
+}
+@media screen and (max-width:500px), screen and (max-width:800px) {
+  form .btn-contact {
+    width: 95%;
   }
 }
