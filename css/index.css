@@ -177,7 +177,7 @@ nav .container {
   align-items: center;
   flex-wrap: wrap;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px), screen and (max-width:800px) {
   nav .container {
     justify-content: space-evenly;
   }
@@ -187,7 +187,7 @@ nav .container h1 {
   margin: 0 auto;
   margin-left: 0;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px), screen and (max-width:800px) {
   nav .container h1 {
     width: 100%;
     margin-top: 1rem;
@@ -200,7 +200,7 @@ nav .container a {
   font-size: 1.6rem;
   padding: 2.5rem 1.5rem;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px), screen and (max-width:800px) {
   nav .container a {
     padding: 1rem 1.5rem;
   }
@@ -235,7 +235,7 @@ nav .container a:hover {
   width: 48%;
   padding-right: 1%;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .home .content-section .text-content {
     width: 100%;
   }
@@ -247,7 +247,7 @@ nav .container a:hover {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .home .content-section .img-content {
     width: 100%;
   }
@@ -264,7 +264,7 @@ nav .container a:hover {
   padding-right: 1%;
   padding-left: 0;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .home .inverse-content .img-content {
     order: 1;
   }
@@ -276,7 +276,7 @@ nav .container a:hover {
 .home .content-destination img {
   border-radius: 10px;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .home .content-destination {
     width: 100%;
   }
@@ -300,23 +300,23 @@ nav .container a:hover {
   font-size: 1.6rem;
   padding: 1rem;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .home .content-pick .destination .btn {
     width: 100%;
   }
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .home .content-pick .destination {
     width: 100%;
     margin: 1.5rem 3rem;
   }
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .home .content-pick {
     flex-wrap: wrap;
   }
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
   .home {
     padding: 0 1.5rem;
     display: flex;
