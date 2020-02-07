@@ -1,1 +1,14 @@
 // Mixins in here
+.btnmix(@bgcolor,@fontcolor,@radius) {
+  background: @bgcolor;
+  color: @fontcolor;
+  border-radius: @radius;
+}
+.flex() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.darkhover(@color) {
+  background: darken(@color, 10%);
+}
