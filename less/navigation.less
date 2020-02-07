@@ -20,6 +20,7 @@ nav {
     }
     a {
       // border: 1px solid red;
+      position: relative;
       color: black;
       text-decoration: none;
       font-size: 1.6rem;
@@ -27,8 +28,23 @@ nav {
       @media @mobile, @tablet {
         padding: 1rem 1.5rem;
       }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 25%;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: 50% 50%;
+        width: 75%;
+        height: 3px;
+        background-color: black;
+        transition: transform 250ms;
+      }
       &:hover {
-        text-decoration: underline;
+        // text-decoration: underline;
+        &::after {
+          transform: translateX(-50%) scaleX(1);
+        }
       } //hover
     } //a
   } //container
